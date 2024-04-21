@@ -1,4 +1,4 @@
-# 01-MSSQL-Create-Alter-Drop-Tables-in-SQL-Server
+# 03-MSSQL-Create-Alter-Drop-Tables-in-SQL-Server
 ## MSSQL | Create Alter Drop Tables in SQL Server
 ### Author: Rohith Dhand
 [MSSQL | Create Alter Drop Tables in SQL Server](https://youtu.be/vAJ6XhWehcs?list=PLGg1nRFYmF5hxiStABfecPwRcWSGlmFyZ&t=111)
