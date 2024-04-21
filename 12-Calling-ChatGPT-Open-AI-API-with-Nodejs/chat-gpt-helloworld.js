@@ -1,6 +1,6 @@
 // const {Configuration, OpenAIApi} = require("openai");
 const  openai  = require('openai');
-const apiKey = "sk-proj-i8jNIob4WDIIyJWbUDXGT3BlbkFJ6VfVDc5nmwz05CG1gdph";
+// const apiKey = "sk-proj-i8jNIob4WDIIyJWbUDXGT3BlbkFJ6VfVDc5nmwz05CG1gdph";
 
 // const configuration = Configuration({
 //     apiKey: chatGptKey
