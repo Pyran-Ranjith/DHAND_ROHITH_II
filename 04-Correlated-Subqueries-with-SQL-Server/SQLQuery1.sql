@@ -46,3 +46,5 @@ end
     /*  WANT TO FIND OUT ALL EMPLOYEES WHO ARE GETTING SALARY GREATER THAN THE AVERAGE OF THE THEIR OWN DEPT */
 	select * from emp x where x.sal > 
 		(select avg(sal) from emp y where y.dept = x.dept);
+    
+
