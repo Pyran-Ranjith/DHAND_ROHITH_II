@@ -1,17 +1,3 @@
-# 04-Correlated-Subqueries-with-SQL-Server
-## Correlated Subqueries with SQL Server
-### Author: Rohith Dhand
-[Correlated Subqueries with SQL Server](https://youtu.be/0nY4ZYDLzNY?list=PLGg1nRFYmF5hxiStABfecPwRcWSGlmFyZ&t=83)
-### Create a new database
-- click 'new query' tab and type following lines
-    ```` sql
-    create database DRII04;
-    ````
-- click Excute button
-- press refresh button. database with nme Test appeares under databases
-### Create new table
-- write click the Test db and click 'new query' and type folllowings
-    ```` sql
 CREATE TABLE emp (
   empno INT PRIMARY KEY,
   ename VARCHAR(10),
@@ -22,10 +8,7 @@ CREATE TABLE emp (
   comm NUMERIC(7,2) NULL,
   dept INT
 )
-    ````
-- execute it and you will see table is created
-### insert data into emp table
-```` sql
+
 begin
 INSERT INTO EMP VALUES
   (7369, 'SMITH', 'CLERK', 7902, '17-DEC-1980', 800, NULL, 20)
@@ -56,16 +39,10 @@ INSERT INTO EMP VALUES
 INSERT INTO EMP VALUES
   (7934, 'MILLER', 'CLERK', 7782, '23-JAN-1982', 1300, NULL, 10)
 end
-````
-### disply all the records in emp table
-- click 'new query' tab and type following lines
-    ```` sql
-    /* disply all the records in emp table */
-    select * from emp;
-    ````
-### execute different quires
-- click 'new query' tab and type following lines
-    ```` sql
+
+	/* disply all the records in emp table */
+	select * from emp;
+
     /*  WANT TO FIND OUT ALL EMPLOYEES WHO ARE GETTING SALARY GREATER THAN THE AVERAGE OF THE THEIR OWN DEPT */
 	select * from emp x where x.sal > 
 		(select avg(sal) from emp y where y.dept = x.dept);
